@@ -7,6 +7,7 @@ import Shared
 import SnapKit
 import XCGLogger
 import BraveShared
+import DomainParser
 
 private let log = Logger.browserLogger
 

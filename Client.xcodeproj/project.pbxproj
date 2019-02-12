@@ -413,6 +413,7 @@
 		59B6913321B695A400E9388E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59B6913121B695A400E9388E /* Localizable.strings */; };
 		59B6913621B695A400E9388E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59B6913421B695A400E9388E /* Localizable.strings */; };
 		59B6913921B695A400E9388E /* BraveShared.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59B6913721B695A400E9388E /* BraveShared.strings */; };
+		59D0F57E2213140A00461C56 /* DomainParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D0F57D2213140A00461C56 /* DomainParser.framework */; };
 		59FFC4CB220DE33900BB6E82 /* DomainParserETLDTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FFC4CA220DE33900BB6E82 /* DomainParserETLDTest.swift */; };
 		5D1DC51C20AC9AFB00905E5A /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1DC51320AC9AF900905E5A /* Data.framework */; };
 		5D1DC52520AC9AFB00905E5A /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1DC51520AC9AFA00905E5A /* Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1703,6 +1704,7 @@
 		59B691F221B6966C00E9388E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59B691F321B6966C00E9388E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		59B691F421B6966C00E9388E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/BraveShared.strings; sourceTree = "<group>"; };
+		59D0F57D2213140A00461C56 /* DomainParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DomainParser.framework; path = Carthage/Build/iOS/DomainParser.framework; sourceTree = "<group>"; };
 		59FFC4CA220DE33900BB6E82 /* DomainParserETLDTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainParserETLDTest.swift; sourceTree = "<group>"; };
 		5D1DC51320AC9AF900905E5A /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1DC51520AC9AFA00905E5A /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
@@ -2149,6 +2151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D0F57E2213140A00461C56 /* DomainParser.framework in Frameworks */,
 				A1AD4BD120BF3F4D007A6EA1 /* Eureka.framework in Frameworks */,
 				E6231C051B90A472005ABB0D /* libxml2.2.tbd in Frameworks */,
 				E6231C011B90A44F005ABB0D /* libz.tbd in Frameworks */,
@@ -3238,6 +3241,7 @@
 		7B604FC11C496005006EEEC3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				59D0F57D2213140A00461C56 /* DomainParser.framework */,
 				A1F66A7F20DD87CA00303328 /* Static.framework */,
 				A1AD4BD520BF476E007A6EA1 /* FastImageCache.framework */,
 				A1AD4BD020BF3F4D007A6EA1 /* Eureka.framework */,
@@ -5016,6 +5020,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/FastImageCache.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Static.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/DomainParser.framework",
 			);
 			name = "Copy Carthage Dependencies";
 			outputPaths = (
