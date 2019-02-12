@@ -3,9 +3,16 @@
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 import XCTest
+import DomainParser
 @testable import Client
 
-extension DomainParserTests {
+class DomainParserTest: XCTestCase {
+    var domainParser: DomainParser!
+    override func setUp() {
+        super.setUp()
+        domainParser = try! DomainParser()
+    }
+    
     func testETLD() {
         //Success Expected
         checkETLD(urlString: "https://m.youtube.com", expectedDomain: "youtube.com")
